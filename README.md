@@ -1,9 +1,10 @@
 # My-Projects
 ### Python Projects
-##### Mini Project 1
+#### Mini Project 1
 
-##### Mini Project 2
-##### Mini Project 3
+#### Mini Project 2
+
+#### Mini Project 3
 ###### Titanic Data Analysis Project Summary
 This project explores the famous Titanic passenger dataset, focusing on uncovering patterns related to survival, passenger demographics, and boarding details using Python libraries like Pandas, Matplotlib, and Seaborn.
 
@@ -57,5 +58,20 @@ This project explores the famous Titanic passenger dataset, focusing on uncoveri
 * No Categorization: 0.
 ###### Total Embarked Passengers: Sum of all 3 locations.
 ###### Insight: Southampton was the main departure port
+
+##### Visualization Enhancements
+* The age histogram was modified to:
+- Show percentage of passengers in each age bin.
+- Include labels above each bar for clarity.
+* Bar plots for embarked included counts and total representation
+
+##### Conclusion
+Survival:      Higher in 1st class, women, and children.
+Age:	         Most passengers were young adults.
+Embarkation:   Majority of passengers boarded at Southampton.
+Gender Gap:    Clear disparity in survival based on gender (women favored).
+Class Divide:  Wealth/class directly influenced survival odds.
+
+
 
 
