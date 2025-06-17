@@ -56,7 +56,7 @@ This project explores the famous Titanic passenger dataset, focusing on uncoveri
 * C (Cherbourg): ~19% of passengers.
 * Q (Queenstown): ~9% of passengers.
 * No Categorization: 0.
-###### Total Embarked Passengers: Sum of all 3 locations.
+###### Total Embarked Passengers: Sum of all locations.
 ###### Insight: Southampton was the main departure port
 
 ##### Visualization Enhancements
