@@ -78,15 +78,6 @@ print(data.iloc[:5, :3])
 * This sets the stage for deeper analysis like feature importance, correlation, and predictive modeling.
 
 
-### File Structure (Example)
-
-```
-├── telecom_churn.csv
-├── telecom_churn_analysis.ipynb
-└── README.md
-```
-
-
 ### Mini Project 3
 ###### Titanic Data Analysis Project Summary
 This project explores the famous Titanic passenger dataset, focusing on uncovering patterns related to survival, passenger demographics, and boarding details using Python libraries like Pandas, Matplotlib, and Seaborn.
