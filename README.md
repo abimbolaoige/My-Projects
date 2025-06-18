@@ -1,10 +1,93 @@
 # My-Projects
 ### Python Projects
-#### Mini Project 1
+### Mini Project 1
 
-#### Mini Project 2
+### Mini Project 2
 
-#### Mini Project 3
+### Telecom Churn Analysis – Mini Project 2
+
+### Project Overview
+
+This project focuses on analyzing a telecom dataset to understand **customer churn behavior**. The goal is to identify patterns and factors associated with customer retention and churn using **Python** data analysis and visualization libraries.
+
+
+### 🛠Tools & Libraries Used
+
+```python
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+```
+
+### Data Loading & Exploration
+
+```python
+# Load the dataset
+data = pd.read_csv('telecom_churn.csv')
+
+# Basic info and structure
+print("Shape of the DataFrame:", data.shape)
+data.info()
+print(data.describe())
+```
+
+### Data Preprocessing
+
+```python
+# Convert 'Churn' column from boolean to integer
+data['Churn'] = data['Churn'].astype('int64')
+print(data.info())
+```
+
+### Churn Distribution
+
+```python
+# Count churned vs non-churned customers
+churn_counts = data['Churn'].value_counts().rename(index={0: 'Not Churned', 1: 'Churned'})
+
+# Plot the distribution
+churn_counts.plot(kind='bar', color=['green', 'red'])
+plt.title('Churn Distribution')
+plt.ylabel('Number of Customers')
+plt.xlabel('Churn Status')
+plt.xticks(rotation=0)
+plt.grid(axis='y', linestyle='--', alpha=0.7)
+plt.show()
+```
+
+### Churn Proportion
+
+```python
+# Calculate churn rate
+churn_proportion = data['Churn'].mean()
+print(f"Proportion of churned users: {churn_proportion:.4f} ({churn_proportion*100:.2f}%)")
+```
+
+### Sample Data View
+
+```python
+# View first 5 rows and first 3 columns
+print(data.iloc[:5, :3])
+```
+
+### Key Takeaways
+
+* The dataset was explored to understand structure and customer behavior.
+* Visualizations highlighted the proportion and distribution of churned customers.
+* This sets the stage for deeper analysis like feature importance, correlation, and predictive modeling.
+
+
+### File Structure (Example)
+
+```
+├── telecom_churn.csv
+├── telecom_churn_analysis.ipynb
+└── README.md
+```
+
+
+### Mini Project 3
 ###### Titanic Data Analysis Project Summary
 This project explores the famous Titanic passenger dataset, focusing on uncovering patterns related to survival, passenger demographics, and boarding details using Python libraries like Pandas, Matplotlib, and Seaborn.
 
